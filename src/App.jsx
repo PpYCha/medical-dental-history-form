@@ -10,6 +10,7 @@ function App() {
         <MedicalHistoryForm />
         <InsuranceDetails />
         <MinorGuardianForm />
+        <DentalQuestioner />
       </div>
     </div>
   );
@@ -118,6 +119,24 @@ const MinorGuardianForm = () => (
       </div>
       <div className="col-span-6">
         <TextInput text="Postcode" type="text" />
+      </div>
+    </div>
+  </div>
+);
+
+const DentalQuestioner = () => (
+  <div>
+    <TextInput
+      text="How did you hear about Rainbow Dental Practice?"
+      type="text"
+    />
+
+    <ToggleButton text="Would you like us to contact you about Special Offers?" />
+    <div>
+      <h2>Dental Questionnaire</h2>
+      <div>
+        <TextInput text="When was your last visit to a dentist?" type="text" />
+        <TextInput text="Text" type="text" />
       </div>
     </div>
   </div>
